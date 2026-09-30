@@ -1,0 +1,2 @@
+# Preserve every original byte, including Japanese text and line endings.
+* -text

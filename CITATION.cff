@@ -1,0 +1,77 @@
+# PRIVATE PRE-PUBLICATION CITATION DRAFT. No release or DOI exists.
+# Root type is deliberately omitted: CFF 1.2.0 allows only software/dataset.
+# Its default is software; this repository contains documents, not software.
+# Use the generic preferred-citation below and the per-paper PAPERS.md records.
+# The named author is confirmed for P0, P2 and P3. P1 attribution is pending.
+cff-version: 1.2.0
+message: >-
+  This is a pre-publication citation draft for a document collection.
+  Use the generic preferred citation for the collection, and PAPERS.md for
+  individual papers. Tsubasa Nakagawa is confirmed as author of P0, P2, and P3;
+  the original author and date of P1 remain pending. Do not use this collection
+  record as confirmation of P1 authorship or as a software-release citation.
+title: "ToraOS: Four Research Papers and the Universal Semantic Constitution (Rev006)"
+authors:
+  - family-names: Nakagawa
+    given-names: Tsubasa
+preferred-citation:
+  type: generic
+  title: "ToraOS: Four Research Papers and the Universal Semantic Constitution (Rev006)"
+  authors:
+    - family-names: Nakagawa
+      given-names: Tsubasa
+  notes: >-
+    Private pre-publication document collection. Not peer reviewed.
+    Named authorship is confirmed for P0, P2 and P3; P1 author/date are pending
+    and must be checked in PAPERS.md before citing that paper. Japanese originals
+    are authoritative; English versions are translation drafts. P2 Japanese
+    original is withheld unchanged because it contains private source locators.
+    No publication date, release version, DOI or venue is asserted.
+references:
+  - type: generic
+    title: >-
+      ToraOS: A Proposal for a Subject-Centric, Evolving AI OS Architecture:
+      Independent Context and Authority, Directional Relations, and Continuous
+      Growth Driven by Real-World Outcomes
+    authors:
+      - family-names: Nakagawa
+        given-names: Tsubasa
+    year: 2026
+    month: 8
+    day: 29
+    notes: "P0. Draft v0.1; position paper and architecture proposal; not peer reviewed."
+  - type: generic
+    title: >-
+      ToraOS OPEN Supplementary Paper 2: External Intelligence Complementation
+      Through Variations in the LLM Semantic Map and Directional Relations:
+      Generalization, Hallucination, and Relational Intelligence in Community Tora
+    authors:
+      - family-names: Nakagawa
+        given-names: Tsubasa
+    year: 2026
+    month: 9
+    day: 19
+    notes: "P2. Research draft v0.1; no empirical results; not peer reviewed."
+  - type: generic
+    title: >-
+      ToraOS OPEN Supplementary Paper 3: A Subject-Centric AI OS Through the
+      Mutual Perspectives of Multiple Personal and Community Subjects:
+      A Secretariat Serving Each Subject's Goal, Overlap and Non-Connection,
+      and Location-Independent Continuity of Execution
+    authors:
+      - family-names: Nakagawa
+        given-names: Tsubasa
+    year: 2026
+    month: 9
+    day: 28
+    notes: "P3. Position paper v0.1; author-adopted; not peer reviewed."
+
+# Unconfirmed or nonexistent fields are left blank rather than invented.
+# license:
+# date-released:
+# version:
+# doi:
+# url:
+# orcid:
+# P1 reference author and original date:
+# Constitution individual author and independent original date:

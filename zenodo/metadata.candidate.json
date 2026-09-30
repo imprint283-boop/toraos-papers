@@ -1,0 +1,19 @@
+{
+  "title": "ToraOS: Four Research Papers and the Universal Semantic Constitution (Rev006)",
+  "upload_type": "publication",
+  "publication_type": "other",
+  "creators": [
+    { "name": "Nakagawa, Tsubasa" }
+  ],
+  "description": "Private pre-publication metadata draft for the ToraOS research-document collection. P0 (2026-08-29), P1 (original author and date pending), P2 (2026-09-19), P3 (2026-09-28), and Universal Semantic Constitution Rev006. The papers are proposals and research drafts, not peer reviewed. The named author is confirmed for P0, P2, and P3; P1 attribution remains pending. Japanese originals are authoritative; English versions are translation drafts. The P2 Japanese original is withheld in its entirety from the publication candidate because it includes private source locators, and is preserved unchanged in private preparation material. Private implementation and dialogue sources are not included and cannot be independently verified from this collection alone. AI assistance in authoring, translation, and preparation is disclosed in README.md. This metadata is not ready for deposit or automatic release ingestion: the license, P1 metadata, and personal-disclosure decisions must be resolved first. No publication date, release version, DOI, or ORCID is asserted.",
+  "keywords": [
+    "ToraOS",
+    "Subject-centric AI",
+    "Authority",
+    "directional Relation",
+    "Context",
+    "research proposal",
+    "semantic constitution"
+  ],
+  "license": ""
+}

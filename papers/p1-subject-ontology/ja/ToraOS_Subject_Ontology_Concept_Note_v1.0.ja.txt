@@ -1,0 +1,542 @@
+﻿ToraOS Subject Ontology Concept Note v1.0
+任意Subject・複数View・方向付きRelation・再帰・Runtime境界・反証可能性
+
+
+STATUS
+NONCANONICAL CONCEPT NOTE / 論文隣接研究ノート
+本書はToraOS論文のCurrentな主張や実装済み機構を自動的に変更しない。論文後の考察を、将来の意味契約・研究問い・実装検証へ接続できる形に整理したものである。
+
+
+0. この文書の目的
+
+
+ToraOS論文は、人・会社・家族・コミュニティ・プロジェクト等について、同一のOS Kernelを異なるSubjectごとに独立成立させ、各Subjectが固有のSource、Context、Authority、Relation、Decision、Outcome等を保持する構想を提示している。
+
+
+本Concept Noteは、そのSubject概念をさらに一般化して検討する。
+
+
+中心となる問いは次である。
+
+
+・何がSubjectになり得るのか。
+・現実対象と、その対象について成立するToraOS Viewは何が違うのか。
+・Subject自身がGoalやSelf-report Capabilityを持たなくても成立できるか。
+・同じSubjectについて複数のCurrentを持つViewが共存できるか。
+・Relationの意味方向と、誰が観測・主張・推論したかをどう分けるか。
+・Subjectの可能性が開かれていても、Runtimeを有限に保てるか。
+・これらの仮説をどう反証可能にするか。
+
+
+本書は「すべてをSubjectとして常時実行する」ことを提案しない。意味上の可能性と物理的実行を混同しないこと自体が、本書で明確化された主要境界である。
+
+
+1. Subjectは意思主体に限定されない
+
+
+ToraOSにおけるSubjectは、人間・法人・組織のような意思主体だけを指す必要はない。
+
+
+理論上、意味上ひとつの対象として区別し、参照し得るものはSubjectになり得る。
+
+
+例として、一人の人間、一匹の動物、会社、家族、Community、Project、一台のパソコン、建物、赤色、愛、民主主義、金、ある事件、法律、研究分野、「赤色研究」、ToraOS、「ToraOSについてのToraOS」等が考えられる。
+
+
+したがって、Subject成立の必要条件として次を要求しない。
+
+
+・意識があること
+・自己認識があること
+・Goalを持つこと
+・Actionできること
+・ToraOSを自分で操作できること
+・Legal Personalityを持つこと
+・人間から見て管理価値が高いこと
+
+
+Subjectであることと、Agentであること、Phenomenal Subjectであること、Legal Subjectであること、Goalを持つことは別である。
+
+
+2. Subjectの可能性を事前に閉じない
+
+
+ToraOSは「Subject候補集合を有限個へ確定する」ことをOntology上の目的にしない。
+
+
+より正確には、Subjectになり得る範囲を事前に閉じない。
+
+
+現実の意味世界では、概念についての概念、研究についての研究、体系についての体系、自己参照する概念が成立する。したがって、ToraOSも「システム都合だけ」を理由に再帰やメタ概念をOntology上禁止しない。
+
+
+これは無限個のToraOS processを実行することを意味しない。
+
+
+Subject PossibilityとRuntime Activationは別である。
+
+
+3. 5つの意味境界
+
+
+今回の考察で、少なくとも次の5状態を明確に分ける必要があることが見えた。
+
+
+3.1 Subject Possibility
+
+
+ある対象が、意味上区別して参照可能であり、理論上Subjectとして扱い得る状態。
+
+
+この段階ではToraOS Viewが作られている必要はなく、Runtime資源も要求しない。
+
+
+3.2 Subject View Establishment
+
+
+あるreferentについて、独立したToraOS Viewが成立している状態。
+
+
+Viewはそのreferentを中心にSource、Current、Authority、Relation、Goal等を保持し得る。
+
+
+同一referentについて複数Viewが成立してよい。
+
+
+3.3 Runtime Activation
+
+
+成立済みViewについて、実際に保存、検索、推論、Relation評価、Action等のRuntime処理が行われる状態。
+
+
+有限のCompute、Storage、Network等を消費する。
+
+
+Viewが存在しても常時Activeである必要はない。
+
+
+3.4 Relation Existence
+
+
+SubjectまたはViewの間に、方向・出典・時点・条件・Authority・Provenance等を伴うRelation Statementが存在する状態。
+
+
+Relationが存在することは、そのRelationが正しい、信用できる、使用可能、Authorityを与える、現在のTaskで必要、という意味ではない。
+
+
+3.5 Task-time Evaluation / Application
+
+
+特定Taskにおいて、Relation、Claim、Credential、Artifact、その他のBoundary Objectを探索・検証し、現在のTaskへ利用する状態。
+
+
+Relation ExistenceとTask-time Evaluationを分けることで、「Graph上にあるから使う」という誤りを避ける。
+
+
+重要な非同値関係は次である。
+
+
+Subjectになり得る ≠ Viewが存在する
+Viewが存在する ≠ RuntimeでActive
+Relationが存在する ≠ 現在評価する
+Relationを評価する ≠ 信用する
+信用する ≠ Authorityを与える
+Authorityがある ≠ Truthである
+
+
+4. 巨大Graphは目的ではなく結果である
+
+
+ToraOSは、世界規模の巨大Graphを先に設計し、そのGraphを埋めることを目的としない。
+
+
+現実には多数の対象、概念、出来事、観測、見解が存在する。それらについて必要に応じてSubject Viewが成立し、必要なRelationが形成される。その結果として大規模なRelational Fieldが現れる可能性がある。
+
+
+したがって、Subjectが100万存在することから、100万×100万のRelation検証が必要だとは導けない。
+
+
+全Subject間総当たりRelationはArchitecture上要求されない。
+
+
+実装上のScaling課題は、Subject候補を削ることではなく、Relation discovery、candidate generation、path selection、Task-time evaluationをboundedに保てるかである。
+
+
+5. 現実対象とToraOS Viewを同一視しない
+
+
+「赤色」と「赤色について成立したToraOS View」は同一ではない。
+
+
+同一の赤色を参照するView A、View B、View Cが存在できる。
+
+
+AとBは同じCurrent、Authority、Source、Goalを持つ必要がない。
+
+
+Aが「赤色を物理・文化・心理から扱う」というGoalを持ち、BがGoalなし、Cが美術史だけを対象にしてもよい。
+
+
+それらは赤色そのもののGoalではなく、各Viewが採用したGoalである。
+
+
+6. CurrentはTruthではない
+
+
+Currentとは、そのViewが現時点で採用・保持している現在像である。
+
+
+Currentはreferentそのものの普遍Truthを意味しない。
+
+
+同じSubjectについてAとBが異なるCurrentを持ってもよい。
+
+
+片方が後に反証されてもよい。双方が部分的に誤っていてもよい。更新されてもよい。統合されなくてもよい。
+
+
+ToraOSは「複数の真実」を生成するのではなく、「複数のSubject-local Currentを区別して保持する」。
+
+
+7. Authority over representation ≠ Authority over referent
+
+
+ある管理者が赤色Viewを管理していても、その人物が赤色そのものについて絶対的Authorityを得るわけではない。
+
+
+Authorityは、世界のTruthを決定する能力ではない。
+
+
+Authorityとは、特定のFramework、Role、Procedure、Scope、Validity等に基づき、誰が何を主張、決定、更新、開示、委任、撤回できる正当な権限を持つかを表す。
+
+
+したがって、
+
+
+Authority over representation ≠ Authority over referent
+Canonical adoption ≠ Truth
+Capability ≠ Authority
+System permission ≠ Social / legal authority
+
+
+を維持する。
+
+
+8. ForkはVersion CopyではなくView Divergenceである
+
+
+ToraOSにおけるForkは単なるファイル複製やGit型のversion branchに限定されない。
+
+
+同一referentについて、別Authority、別Source、別Current、別Trajectoryを持つ独立Viewを成立させることができる。
+
+
+Fork後のViewはmergeを義務付けられない。
+
+
+互いに同意、部分同意、反対、無関係、非接続であってよい。
+
+
+より正確には、Forkは「複数のTruthを作る」ことではなく、同一referentに対する独立したSubject ViewのDivergenceを許容することである。
+
+
+9. 再帰を理論上禁止しない
+
+
+ToraOS自体もSubjectになり得る。
+
+
+そのため「ToraOSについてのToraOS」、さらにそれについてのToraOSも理論上排除されない。
+
+
+これは無限Runtimeを要求しない。
+
+
+再帰可能な意味空間と、有限Runtimeを分離する。
+
+
+10. Subject間接続はContext暗黙統合を要求しない
+
+
+ToraOSのSubject境界は、他Subjectと一切情報交換しない隔離を意味しない。
+
+
+境界を越え得るものには、Relationだけでなく、明示的に開示されたClaim、Credential、Artifact、検証可能な参照等があり得る。
+
+
+重要なのは、Subject AのContextそのものをSubject Bへ暗黙コピーしないことである。
+
+
+接続は、Authority、Provenance、Time、Scope、Disclosure Policy等に拘束されたBoundary Objectを通じて行う。
+
+
+物理的に別DBへ置くことを必須とはしない。重要なのは意味上・Authority上の境界が崩れないことである。
+
+
+11. Relationは少なくとも複数の軸を持つ
+
+
+ピノの例により、一方向Relationを単なるA→Bだけで扱うと不足する可能性が明確になった。
+
+
+少なくとも次を分ける必要がある。
+
+
+11.1 Semantic Direction
+
+
+Relationそのものの意味方向。
+
+
+例:
+Pino → PREFERS → Food A
+Person A → MEMBER_OF → Company B
+
+
+11.2 Statement Issuer
+
+
+そのRelationまたはClaimを誰が発行・主張したか。
+
+
+11.3 Observer
+
+
+元となる出来事・行動・状態を誰または何が観測したか。
+
+
+11.4 Inference Origin
+
+
+ObservationやSourceからInferenceを生成したAI、Logic、Human process等。
+
+
+11.5 Provenance
+
+
+SourceからClaim、Inference、Relation、Currentへ至る加工・派生経路。
+
+
+11.6 Authority
+
+
+Statement Issuer、Observer、Inference Origin等が、そのScopeで何を行う正当な権限を持つか。
+
+
+Semantic DirectionとProvenance Directionを混同しない。
+
+
+AIが「Pinoは餌Aを好む可能性が高い」と推論したからといって、Pino本人が「餌Aが好き」と主張したことにはならない。
+
+
+12. 一方向Relationと相互Relation
+
+
+A→BとB→Aは独立したStatementである。
+
+
+片方向のEvidenceが強くても、反対方向のClaimが存在するとは限らない。
+
+
+Subject自身がSelf-reportできない場合、人間やAIのObservation・Inferenceが大量に存在しても、それを本人確認済みStatementへ自動昇格してはならない。
+
+
+相互Relationは、対応する複数方向のStatementが独立に成立し、同一現実関係を指していることを検証できた場合のProjectionとして扱う。
+
+
+元Statementは保持する。
+
+
+13. ピノの例: Truth不明でもActionは改善できる
+
+
+ピノについてToraOS Viewを成立させる。
+
+
+ピノ自身が「この餌が好き」「この場所が好き」「外が嫌い」とToraOSへ入力できない場合でも、周囲はObservationを提供できる。
+
+
+例:
+Observation: 過去10回中9回、餌Aを先に選択した。
+Human Claim: 飼い主は「ピノは餌Aが好き」と考えている。
+Inference: 現在のEvidenceでは餌Aを選好している可能性が高い。
+Prediction: 同条件なら次回も餌Aを選ぶ可能性が高い。
+Outcome: 実際には餌Bを選んだ。
+Correction: 条件差または過去Inferenceを再評価する。
+
+
+重要なのは、Observation、Human Claim、Inference、Prediction、Outcomeを潰さないことである。
+
+
+ToraOSはピノの内面に関する絶対Truthへ到達しなくてもよい。
+
+
+過去EvidenceとOutcomeから、次にどの行動を選ぶ可能性が高いかを予測し、Subjectにとって望ましい可能性が高いActionへ修正できる。
+
+
+Truthの完全取得を、より良いActionの必要条件にしない。
+
+
+14. クオリアとの境界
+
+
+ToraOSはクオリア問題そのものを解決しない。
+
+
+ピノがある匂いをどのように感じているか、人間やAIがその主観経験そのものへ直接アクセスできるとは限らない。
+
+
+しかしToraOSは、外部Observation、第三者Claim、Inference、一人称Claimが得られる場合のFirst-person Evidenceを同じものへ潰さず保持できる。
+
+
+つまり「主観経験へ直接アクセスできない」ことを失敗とせず、その境界を残したままSubjectについて学習できる。
+
+
+SubjectであることとPhenomenal Subjectであることを同一視しない。
+
+
+15. Subject-neutral KernelとOptional Capability
+
+
+Person、Company、Community、Animal、Concept等が同じSubject grammar上に存在できるとしても、それらが同じCapabilityを持つ必要はない。
+
+
+PersonはSelf-report、Goal、Actionを持ち得る。
+CompanyはRole、Governance、Representative Authorityを必要とし得る。
+AnimalはSelf-report Capabilityが限定され得る。
+ConceptはAction CapabilityもGoalも持たなくてよい。
+
+
+One OS. Any Subject.という仮説は、全Subjectを同じように扱うことではない。
+
+
+共通Kernelの意味を維持しつつ、Capability、Profile、Governance等の差として表現できるかを問う。
+
+
+16. 現時点の中心原則
+
+
+1. Subjectになり得る範囲を事前に閉じない。
+2. Subjectであるために意識、Goal、Action、Self-reportを要求しない。
+3. Subjectと、そのSubjectについて成立するToraOS Viewを同一視しない。
+4. Subject Possibility、View Establishment、Runtime Activation、Relation Existence、Task-time Evaluationを分ける。
+5. 同一referentについて複数の独立Viewが存在してよい。
+6. CurrentはTruthではない。
+7. 管理AuthorityはreferentそのものへのTruth Authorityではない。
+8. GoalはSubject成立条件ではなくOptional Stateである。
+9. Fork、矛盾、不同意、非接続、Abstentionを正常状態として許容する。
+10. 再帰Subjectを理論上禁止しない。
+11. Graph規模はOntology上の禁止理由ではない。Scalingはbounded Runtimeの問題として扱う。
+12. RelationのSemantic DirectionとStatement Issuer、Observer、Inference Origin、Provenance、Authorityを混同しない。
+13. Relationの存在は利用・信用・Authorityを意味しない。
+14. Subject自身から確認できないInferenceをFirst-person Claimへ偽装しない。
+15. 完全Truthへ到達できなくてもEvidence、Prediction、Outcome、CorrectionからActionを改善できる。
+16. ToraOSは世界を一つのTruthへ収束させることを目的としない。
+
+
+17. 反証可能な中心仮説
+
+
+本Concept Noteは、理論を美しく見せることより、壊せる仮説へ変換することを重視する。
+
+
+H1. Outcome-driven Growth
+
+
+仮説:
+過去のSource、Outcome、CorrectionをSubject Stateとして保持し、関連する後続Taskへ適用することで、Foundation Modelの重み更新を必須とせず、初回Actionを改善できる。
+
+
+反証方向:
+Correctionあり群となし群を、過去Taskと関連するが条件の異なる未見Taskで比較し、事前に定めた最小有効効果を超える初回Action改善、Owner修正減少、Outcome改善が再現しない場合、この仮説は弱まる。
+
+
+H2. Subject Boundary
+
+
+仮説:
+SubjectごとのContextとAuthorityを暗黙統合せずとも、明示的なClaim、Relation、Credential、Artifact等のBoundary Objectを通じて、必要なSubject間協調を成立させられる。
+
+
+反証方向:
+代表的なCross-subject Taskで、境界を越えたRaw Context共有が恒常的に不可欠となり、明示的な限定開示では実用的に機能しない場合、この境界仮説は弱まる。
+
+
+H3. Directional Relation
+
+
+仮説:
+A→BとB→Aを独立Statementとして保持し、必要な場合だけ相互Projectionする構造は、一つの共有Relation Recordより、不同意、撤回、時点差、Authority差、係争を情報損失なく表現できる。
+
+
+反証方向:
+雇用、所属、委任、資格、保証等の複数領域で、単一Relation Recordと比較して情報価値、訂正可能性、係争表現能力に実質差がない場合、この複雑化の価値は否定される。
+
+
+H4. Subject-neutral Kernel
+
+
+仮説:
+Person、Company、Community、Animal、Concept等を、共通Semantic Kernelを保持したままCapability、Profile、Governance等の差として表現できる。
+
+
+反証方向:
+Subject種別を追加するたびにSource、Authority、Relation、Current、Outcome等の中核意味自体を別実装へ分岐させる必要が生じ、共通Kernelが実質空になる場合、「One OS. Any Subject.」仮説は崩れる。
+
+
+H5. Claim / Provenance Integrity
+
+
+仮説:
+Observation、Statement Issuer、Semantic Relation、Inference Origin、Provenance、Authorityを分離することで、AI推論や第三者ObservationをSubject本人のClaimやAuthorityへ偽装せず運用できる。
+
+
+反証方向:
+通常運用またはRed Teamで、Inference / ObservationからVerified First-person ClaimやAuthority-bearing Claimへの不正昇格を意味上検出・拒否できない場合、このIntegrity仮説は成立しない。
+
+
+18. まだOPENな論点
+
+
+本書でSubjectの可能性を狭めるためではなく、意味を壊さず実装へ投影するために未解決な問いを残す。
+
+
+・「意味上区別して参照可能」の形式的定義は何か。
+・Entity / Concept / Subject / Referent / Viewの語彙をどう正式化するか。
+・同一referentを指す複数ViewをどうResolutionするか。世界共通IDは必要か、不要か。
+・View Establishmentの最小条件は何か。
+・Inactive Viewをどのように保存・復元するか。
+・Relation discoveryとTask-time evaluationをどのようにboundedにするか。
+・Relation Semantic DirectionとStatement Issuer等の正式schemaは何か。
+・Subject自身がSelf-reportできない場合のMutualityはどう定義するか。
+・Fork、Divergence、Merge、Rebaseに相当する意味操作は何か。
+・Recursive Subjectを循環・無限評価なしにどう扱うか。
+・Authority over representationとAuthority over referentの関係をどう証明・否認するか。
+・AI InferenceからClaimへのLaunderingをどうRed Teamするか。
+・Subject-neutral Kernelの共通部分が本当に十分な意味量を持つか。
+・Outcomeが複数Subjectで対立する場合、Correctionをどう分離するか。
+・別実装・Fork間で最小Semantic Grammarをどう相互運用するか。
+
+
+19. 現時点の中心命題
+
+
+ToraOSは、人・会社・AIだけのためのOSではない。
+
+
+現実、物体、生物、出来事、概念、思想、関係、体系、そしてそれらについての概念を含め、意味上区別可能な任意のSubjectについて、理論上独立したViewを成立させ得る。
+
+
+そのViewは対象そのものの普遍Truthではなく、一つのToraOS ViewがSource、Authority、Claim、Relation、Inference、Outcome等から形成するSubject-local Currentである。
+
+
+同一referentについて異なるCurrentを持つViewが存在してよく、Fork、反証、矛盾、再帰、非接続、Abstentionも正常である。
+
+
+Subject自身がToraOSを操作・自己申告できない場合でも、Observation、Claim、Inference、Prediction、Outcomeから理解とActionを修正できる。ただし、それをSubject自身の一人称TruthやAuthorityへ偽装しない。
+
+
+ToraOSが目指すのは、世界を一つの正しいGraphへ収束させることではない。
+
+
+異なるSubject Viewが異なるまま存在し、それでもSource、Authority、Provenance、Direction、Time、Disclosureを失わず関係できる意味環境を成立させ、その関係と実Outcomeから将来のActionを改善できるかを検証することである。

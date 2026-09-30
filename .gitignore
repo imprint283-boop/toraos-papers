@@ -1,0 +1,8 @@
+# Preparation records and private source identities stay outside this repository.
+private/
+*.zip
+SOURCE_LEDGER_PRIVATE.json
+.DS_Store
+Thumbs.db
+# P2 Japanese original contains private Drive locators; held outside Git.
+papers/p2-relational-intelligence/ja/ToraOS_OPEN_第2補完論文_意味地図と方向付きRelation_v0.1.md
