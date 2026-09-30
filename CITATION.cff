@@ -2,18 +2,19 @@
 # Root type is deliberately omitted: CFF 1.2.0 allows only software/dataset.
 # Its default is software; this repository contains documents, not software.
 # Use the generic preferred-citation below and the per-paper PAPERS.md records.
-# The named author is confirmed for P0, P2 and P3. P1 attribution is pending.
+# P1 author/date were confirmed by the author on 2026-09-30.
 cff-version: 1.2.0
 message: >-
   This is a pre-publication citation draft for a document collection.
   Use the generic preferred citation for the collection, and PAPERS.md for
-  individual papers. Tsubasa Nakagawa is confirmed as author of P0, P2, and P3;
-  the original author and date of P1 remain pending. Do not use this collection
-  record as confirmation of P1 authorship or as a software-release citation.
+  individual papers. Tsubasa Nakagawa is confirmed as author of P0, P1, P2,
+  and P3. P1 author/date were confirmed by the author on 2026-09-30.
+  This collection record is not a software-release citation.
 title: "ToraOS: Four Research Papers and the Universal Semantic Constitution (Rev006)"
 authors:
   - family-names: Nakagawa
     given-names: Tsubasa
+license: CC-BY-4.0
 preferred-citation:
   type: generic
   title: "ToraOS: Four Research Papers and the Universal Semantic Constitution (Rev006)"
@@ -22,10 +23,11 @@ preferred-citation:
       given-names: Tsubasa
   notes: >-
     Private pre-publication document collection. Not peer reviewed.
-    Named authorship is confirmed for P0, P2 and P3; P1 author/date are pending
-    and must be checked in PAPERS.md before citing that paper. Japanese originals
-    are authoritative; English versions are translation drafts. P2 Japanese
-    original is withheld unchanged because it contains private source locators.
+    Named authorship is confirmed for P0, P1, P2 and P3. P1 date is 2026-08-30,
+    as confirmed by the author on 2026-09-30. Japanese originals are authoritative;
+    English versions are translation drafts. P2 is included as a separate Japanese
+    publication version masking only two private Drive links with an explanatory
+    notice; the source original is preserved unchanged in private material.
     No publication date, release version, DOI or venue is asserted.
 references:
   - type: generic
@@ -40,6 +42,20 @@ references:
     month: 8
     day: 29
     notes: "P0. Draft v0.1; position paper and architecture proposal; not peer reviewed."
+  - type: generic
+    title: >-
+      ToraOS Subject Ontology Concept Note v1.0: Any Subject, Multiple Views,
+      Directional Relations, Recursion, Runtime Boundaries, and Falsifiability
+    authors:
+      - family-names: Nakagawa
+        given-names: Tsubasa
+    year: 2026
+    month: 8
+    day: 30
+    notes: >-
+      P1. NONCANONICAL Concept Note v1.0; not peer reviewed.
+      Author and date confirmed by the author on 2026-09-30;
+      historical original body and translation remain unchanged.
   - type: generic
     title: >-
       ToraOS OPEN Supplementary Paper 2: External Intelligence Complementation
@@ -67,11 +83,9 @@ references:
     notes: "P3. Position paper v0.1; author-adopted; not peer reviewed."
 
 # Unconfirmed or nonexistent fields are left blank rather than invented.
-# license:
 # date-released:
 # version:
 # doi:
 # url:
 # orcid:
-# P1 reference author and original date:
 # Constitution individual author and independent original date:
