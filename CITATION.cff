@@ -1,15 +1,7 @@
-# PRIVATE PRE-PUBLICATION CITATION DRAFT. No release or DOI exists.
-# Root type is deliberately omitted: CFF 1.2.0 allows only software/dataset.
-# Its default is software; this repository contains documents, not software.
-# Use the generic preferred-citation below and the per-paper PAPERS.md records.
-# P1 author/date were confirmed by the author on 2026-09-30.
 cff-version: 1.2.0
 message: >-
-  This is a pre-publication citation draft for a document collection.
-  Use the generic preferred citation for the collection, and PAPERS.md for
-  individual papers. Tsubasa Nakagawa is confirmed as author of P0, P1, P2,
-  and P3. P1 author/date were confirmed by the author on 2026-09-30.
-  This collection record is not a software-release citation.
+  If you cite this collection, please use the preferred citation below.
+  Individual papers are listed in PAPERS.md.
 title: "ToraOS: Four Research Papers and the Universal Semantic Constitution (Rev006)"
 authors:
   - family-names: Nakagawa
@@ -22,13 +14,8 @@ preferred-citation:
     - family-names: Nakagawa
       given-names: Tsubasa
   notes: >-
-    Private pre-publication document collection. Not peer reviewed.
-    Named authorship is confirmed for P0, P1, P2 and P3. P1 date is 2026-08-30,
-    as confirmed by the author on 2026-09-30. Japanese originals are authoritative;
-    English versions are translation drafts. P2 is included as a separate Japanese
-    publication version masking only two private Drive links with an explanatory
-    notice; the source original is preserved unchanged in private material.
-    No publication date, release version, DOI or venue is asserted.
+    Document collection; papers are not peer reviewed. Japanese originals are
+    authoritative; English versions are translation drafts.
 references:
   - type: generic
     title: >-
