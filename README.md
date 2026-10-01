@@ -27,7 +27,7 @@
 
 ## 連絡先
 
-質問・感想・指摘は、[GitHubのIssues](https://github.com/imprint283-boop/toraos-papers/issues) か、メール **tora.os@gmail.com**（中川 翼）へ。
+質問・感想・指摘は、[GitHubのIssues](https://github.com/imprint283-boop/toraos-papers/issues) か、メール **toraos283@gmail.com**（中川 翼）へ。
 
 ---
 
@@ -41,4 +41,4 @@ This collection contains four research papers (P0–P3, August–September 2026)
 
 ### Contact
 
-Questions, comments, and corrections are welcome via [GitHub Issues](https://github.com/imprint283-boop/toraos-papers/issues) or by email to **tora.os@gmail.com** (Tsubasa Nakagawa).
+Questions, comments, and corrections are welcome via [GitHub Issues](https://github.com/imprint283-boop/toraos-papers/issues) or by email to **toraos283@gmail.com** (Tsubasa Nakagawa).
