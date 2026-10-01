@@ -24,6 +24,11 @@
 
 文章は [CC BY 4.0](LICENSE) で公開します。作者を表示し、変更した場合はその旨を示せば、利用・改変・再配布ができます。
 
+
+## 連絡先
+
+質問・感想・指摘は、[GitHubのIssues](https://github.com/imprint283-boop/toraos-papers/issues) か、メール **tora.os@gmail.com**（中川 翼）へ。
+
 ---
 
 ## English
@@ -33,3 +38,7 @@ ToraOS is a proposal for a **subject-centric** AI operating architecture: each s
 This collection contains four research papers (P0–P3, August–September 2026) and the ToraOS Universal Semantic Constitution (Rev006). All papers are **proposals and research drafts, not peer reviewed**; hypotheses, visions, and historical partial-implementation reports are not claims of verified capability. No implementation code is included. See [PAPERS.md](PAPERS.md) for details and citations.
 
 **Japanese originals are authoritative; English versions are translation drafts.** The Japanese P2 is a public version with only two links to private materials masked (noted at the top). The author is Tsubasa Nakagawa; the ideas are the author's, and the paper texts were written with GPT. Texts are licensed under [CC BY 4.0](LICENSE).
+
+### Contact
+
+Questions, comments, and corrections are welcome via [GitHub Issues](https://github.com/imprint283-boop/toraos-papers/issues) or by email to **tora.os@gmail.com** (Tsubasa Nakagawa).
